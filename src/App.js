@@ -1,24 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbarr from './components/Navbarr';
+
+import Cardd from './components/Cardd';
+import Cardd2 from './components/Cardd2';
+import Cardd3 from './components/Cardd3';
+import Footerr from './components/Footerr';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+  <Navbarr/>
+  <h1 id="titre">The Legend of Zelda Tears of the Kingdom Rito village</h1>
+  <div className='container'>
+  <Cardd/>
+  <Cardd2/>
+  <Cardd3/>
+  </div>
+  <Footerr/>
+  </>
   );
 }
 
